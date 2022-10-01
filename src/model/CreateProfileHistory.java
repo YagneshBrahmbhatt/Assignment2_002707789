@@ -27,5 +27,12 @@ public class CreateProfileHistory {
         this.history = history;
     }
     
+    public CreateProfile addNewProfile(){
+        
+        CreateProfile newProfile = new CreateProfile();
+        history.add(newProfile);
+        return newProfile;
+        
+    }
     
 }

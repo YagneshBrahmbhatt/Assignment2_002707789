@@ -17,59 +17,86 @@
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
           <Component id="lblTitle" alignment="1" max="32767" attributes="0"/>
-          <Group type="102" alignment="1" attributes="0">
-              <EmptySpace pref="87" max="32767" attributes="0"/>
-              <Group type="103" groupAlignment="1" attributes="0">
+          <Group type="102" attributes="0">
+              <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" attributes="0">
-                      <Component id="lblContactInfo" linkSize="1" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="85" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Group type="102" alignment="1" attributes="0">
-                              <Component id="lblEmailID" linkSize="1" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                              <Component id="txtEmailID" min="-2" pref="194" max="-2" attributes="0"/>
+                          <Group type="103" alignment="1" groupAlignment="0" attributes="0">
+                              <Group type="102" attributes="0">
+                                  <Component id="lblEmployeeID" linkSize="1" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                                  <Component id="txtEmployeeID" min="-2" pref="194" max="-2" attributes="0"/>
+                              </Group>
+                              <Group type="102" attributes="0">
+                                  <Component id="lblName" linkSize="1" min="-2" pref="55" max="-2" attributes="0"/>
+                                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                                  <Component id="txtName" min="-2" pref="194" max="-2" attributes="0"/>
+                              </Group>
                           </Group>
-                          <Group type="102" alignment="0" attributes="0">
-                              <Component id="lblCellNumber" linkSize="1" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                              <Component id="txtCellNumber" min="-2" pref="194" max="-2" attributes="0"/>
+                          <Group type="103" alignment="1" groupAlignment="0" attributes="0">
+                              <Group type="102" attributes="0">
+                                  <Component id="lblGender" linkSize="1" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                                  <Component id="txtGender" min="-2" pref="194" max="-2" attributes="0"/>
+                              </Group>
+                              <Group type="102" attributes="0">
+                                  <Component id="lblAge" linkSize="1" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                                  <Component id="txtAge" min="-2" pref="194" max="-2" attributes="0"/>
+                              </Group>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <Component id="lblStartDate" linkSize="1" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                                  <Component id="txtStartDate" min="-2" pref="194" max="-2" attributes="0"/>
+                              </Group>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <Component id="lblLevel" linkSize="1" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                                  <Component id="txtLevel" min="-2" pref="194" max="-2" attributes="0"/>
+                              </Group>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <Component id="lblTeamInfo" linkSize="1" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                                  <Component id="txtTeamInfo" min="-2" pref="194" max="-2" attributes="0"/>
+                              </Group>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <Component id="lblPositionTitle" linkSize="1" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                                  <Component id="txtPositionTitle" min="-2" pref="194" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <Group type="102" alignment="1" attributes="0">
+                              <Component id="lblContactInfo" linkSize="1" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Group type="102" alignment="1" attributes="0">
+                                          <Component id="lblEmailID" linkSize="1" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                          <Component id="txtEmailID" min="-2" pref="194" max="-2" attributes="0"/>
+                                      </Group>
+                                      <Group type="102" alignment="0" attributes="0">
+                                          <Component id="lblCellNumber" linkSize="1" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                          <Component id="txtCellNumber" min="-2" pref="194" max="-2" attributes="0"/>
+                                      </Group>
+                                  </Group>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Component id="lblPhoto" linkSize="1" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                                      <Component id="btnPhoto" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                              </Group>
                           </Group>
                       </Group>
                   </Group>
-                  <Group type="102" attributes="0">
-                      <Group type="103" groupAlignment="1" attributes="0">
-                          <Group type="103" alignment="1" groupAlignment="0" attributes="0">
-                              <Component id="lblPositionTitle" linkSize="1" min="-2" max="-2" attributes="0"/>
-                              <Component id="lblTeamInfo" linkSize="1" min="-2" max="-2" attributes="0"/>
-                              <Component id="lblLevel" linkSize="1" min="-2" max="-2" attributes="0"/>
-                              <Component id="lblStartDate" linkSize="1" min="-2" max="-2" attributes="0"/>
-                              <Component id="lblGender" linkSize="1" min="-2" max="-2" attributes="0"/>
-                              <Component id="lblAge" linkSize="1" min="-2" max="-2" attributes="0"/>
-                              <Component id="lblEmployeeID" linkSize="1" min="-2" max="-2" attributes="0"/>
-                              <Component id="lblName" linkSize="1" min="-2" pref="55" max="-2" attributes="0"/>
-                          </Group>
-                          <Component id="lblPhoto" linkSize="1" alignment="1" min="-2" max="-2" attributes="0"/>
-                      </Group>
-                      <EmptySpace type="separate" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="txtName" min="-2" pref="194" max="-2" attributes="0"/>
-                          <Component id="txtEmployeeID" min="-2" pref="194" max="-2" attributes="0"/>
-                          <Component id="txtAge" min="-2" pref="194" max="-2" attributes="0"/>
-                          <Component id="txtGender" min="-2" pref="194" max="-2" attributes="0"/>
-                          <Component id="txtStartDate" min="-2" pref="194" max="-2" attributes="0"/>
-                          <Component id="txtLevel" min="-2" pref="194" max="-2" attributes="0"/>
-                          <Component id="txtTeamInfo" min="-2" pref="194" max="-2" attributes="0"/>
-                          <Component id="txtPositionInfo" min="-2" pref="194" max="-2" attributes="0"/>
-                          <Component id="btnPhoto" alignment="0" min="-2" max="-2" attributes="0"/>
-                      </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="189" max="-2" attributes="0"/>
+                      <Component id="btnSave" min="-2" pref="173" max="-2" attributes="0"/>
                   </Group>
               </Group>
-              <EmptySpace min="-2" pref="155" max="-2" attributes="0"/>
-          </Group>
-          <Group type="102" alignment="0" attributes="0">
-              <EmptySpace min="-2" pref="190" max="-2" attributes="0"/>
-              <Component id="btnSave" min="-2" pref="173" max="-2" attributes="0"/>
-              <EmptySpace max="32767" attributes="0"/>
+              <EmptySpace pref="157" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -78,65 +105,65 @@
           <Group type="102" alignment="0" attributes="0">
               <EmptySpace min="-2" pref="25" max="-2" attributes="0"/>
               <Component id="lblTitle" min="-2" max="-2" attributes="0"/>
-              <EmptySpace min="-2" pref="55" max="-2" attributes="0"/>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="lblName" linkSize="2" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="txtName" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <EmptySpace type="unrelated" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
                   <Component id="lblEmployeeID" linkSize="2" min="-2" max="-2" attributes="0"/>
                   <Component id="txtEmployeeID" min="-2" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <EmptySpace type="unrelated" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="lblAge" linkSize="2" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="txtAge" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <EmptySpace type="unrelated" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="lblGender" linkSize="2" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="txtGender" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <EmptySpace type="unrelated" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="lblStartDate" linkSize="2" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="txtStartDate" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <EmptySpace type="unrelated" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="lblLevel" linkSize="2" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="txtLevel" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <EmptySpace type="unrelated" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="lblTeamInfo" linkSize="2" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="txtTeamInfo" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <EmptySpace type="unrelated" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="lblPositionTitle" linkSize="2" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="txtPositionInfo" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="txtPositionTitle" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace min="-2" pref="26" max="-2" attributes="0"/>
+              <EmptySpace type="unrelated" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="lblContactInfo" linkSize="2" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="lblCellNumber" linkSize="2" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="txtCellNumber" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <EmptySpace type="unrelated" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="lblEmailID" linkSize="2" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="txtEmailID" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace min="-2" pref="25" max="-2" attributes="0"/>
+              <EmptySpace type="unrelated" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="lblPhoto" linkSize="2" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="btnPhoto" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace pref="28" max="32767" attributes="0"/>
+              <EmptySpace min="-2" pref="35" max="-2" attributes="0"/>
               <Component id="btnSave" min="-2" max="-2" attributes="0"/>
-              <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
+              <EmptySpace pref="143" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -258,9 +285,9 @@
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtTeamInfoActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JTextField" name="txtPositionInfo">
+    <Component class="javax.swing.JTextField" name="txtPositionTitle">
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtPositionInfoActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtPositionTitleActionPerformed"/>
       </Events>
     </Component>
     <Component class="javax.swing.JTextField" name="txtCellNumber">
@@ -277,11 +304,17 @@
       <Properties>
         <Property name="text" type="java.lang.String" value="Upload"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnPhotoActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="btnSave">
       <Properties>
         <Property name="text" type="java.lang.String" value="Save"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnSaveActionPerformed"/>
+      </Events>
     </Component>
   </SubComponents>
 </Form>

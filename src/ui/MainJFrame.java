@@ -4,6 +4,8 @@
  */
 package ui;
 
+import model.CreateProfileHistory;
+
 /**
  *
  * @author Yagnesh
@@ -13,8 +15,14 @@ public class MainJFrame extends javax.swing.JFrame {
     /**
      * Creates new form MainJFrame
      */
+    CreateProfileHistory history;
+    
     public MainJFrame() {
         initComponents();
+        
+        history = new CreateProfileHistory();
+        
+       
     }
 
     /**
@@ -109,6 +117,10 @@ public class MainJFrame extends javax.swing.JFrame {
 
     private void btnCreateActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCreateActionPerformed
         // TODO add your handling code here:
+        
+        CreateJPanel createPanel = new CreateJPanel(history);
+        splitPane.setRightComponent(createPanel);
+        
     }//GEN-LAST:event_btnCreateActionPerformed
 
     /**

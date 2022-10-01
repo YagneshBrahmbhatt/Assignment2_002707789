@@ -22,7 +22,15 @@ public class CreateProfile {
     private String PositionTitle;
     private String ContactInfo;
     private String CellNumber;
-    private double EmailID; //decimals
+    private String EmailID;
+
+    public String getEmailID() {
+        return EmailID;
+    }
+
+    public void setEmailID(String EmailID) {
+        this.EmailID = EmailID;
+    }
     private Image Photo;
 
     public String getName() {
@@ -104,15 +112,7 @@ public class CreateProfile {
     public void setCellNumber(String CellNumber) {
         this.CellNumber = CellNumber;
     }
-
-    public double getEmailID() {
-        return EmailID;
-    }
-
-    public void setEmailID(double EmailID) {
-        this.EmailID = EmailID;
-    }
-
+    
     public Image getPhoto() {
         return Photo;
     }
@@ -120,5 +120,7 @@ public class CreateProfile {
     public void setPhoto(Image Photo) {
         this.Photo = Photo;
     }
+
+    
     
 }
