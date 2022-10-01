@@ -298,7 +298,7 @@ public class CreateJPanel extends javax.swing.JPanel {
                     .addComponent(btnPhoto))
                 .addGap(35, 35, 35)
                 .addComponent(btnSave)
-                .addContainerGap(143, Short.MAX_VALUE))
+                .addContainerGap(43, Short.MAX_VALUE))
         );
 
         layout.linkSize(javax.swing.SwingConstants.VERTICAL, new java.awt.Component[] {lblAge, lblCellNumber, lblContactInfo, lblEmailID, lblEmployeeID, lblGender, lblLevel, lblName, lblPhoto, lblPositionTitle, lblStartDate, lblTeamInfo});
@@ -382,12 +382,7 @@ public class CreateJPanel extends javax.swing.JPanel {
         txtPositionTitle.setText("");
         txtCellNumber.setText("");
         txtEmailID.setText("");
-        
-        
-       
-        
-        
-        
+                 
         
     }//GEN-LAST:event_btnSaveActionPerformed
 

@@ -35,4 +35,8 @@ public class CreateProfileHistory {
         
     }
     
+    public void deleteProfile(CreateProfile cp){
+        history.remove(cp);
+    }
+    
 }
