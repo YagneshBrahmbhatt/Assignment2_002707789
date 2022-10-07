@@ -347,33 +347,37 @@ public class CreateJPanel extends javax.swing.JPanel {
 
     private void btnSaveActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSaveActionPerformed
         // TODO add your handling code here:
-        
+       Integer EmployeeId = Integer.parseInt(txtEmployeeID.getText());
+       
         String Name = txtName.getText();
-        String EmployeeID = txtEmployeeID.getText();
-        String Age = txtAge.getText();
+        int EmployeeID = Integer.parseInt(txtEmployeeID.getText());
+        int Age = Integer.parseInt(txtAge.getText());
         String Gender = txtGender.getText();
         String StartDate = txtStartDate.getText();
         String Level = txtLevel.getText();
         String TeamInfo = txtTeamInfo.getText();
         String PositionTitle = txtPositionTitle.getText();
-        String CellNumber = txtCellNumber.getText();
+        int CellNumber = Integer.parseInt(txtCellNumber.getText());
         String EmailID = txtEmailID.getText();
         
         CreateProfile cp = history.addNewProfile();
         
-        cp.getName();
-        cp.getAge();
-        cp.getGender();
-        cp.getStartDate();
-        cp.getLevel();
-        cp.getTeamInfo();
-        cp.getPositionTitle();
-        cp.getCellNumber();
-        cp.getEmailID();
+        cp.setName(Name);
+        cp.setEmployeeID(EmployeeID);
+        cp.setAge(Age);
+        cp.setGender(Gender);
+        cp.setStartDate(StartDate);
+        cp.setLevel(Level);
+        cp.setTeamInfo(TeamInfo);
+        cp.setPositionTitle(PositionTitle);
+        cp.setCellNumber(CellNumber);
+        cp.setEmailID(EmailID);
+        
         
         JOptionPane.showMessageDialog(this,"New Employee Profile Created.");
         
         txtName.setText("");
+        txtEmployeeID.setText("");
         txtAge.setText("");
         txtGender.setText("");
         txtStartDate.setText("");

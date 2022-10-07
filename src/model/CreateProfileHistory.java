@@ -25,7 +25,7 @@ public class CreateProfileHistory {
 
     public void setHistory(ArrayList<CreateProfile> history) {
         this.history = history;
-    }
+    } 
     
     public CreateProfile addNewProfile(){
         

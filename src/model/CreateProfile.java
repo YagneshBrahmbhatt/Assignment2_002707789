@@ -13,16 +13,49 @@ import java.awt.Image;
 public class CreateProfile {
     
     private String Name;
-    private String EmployeeID;
-    private String age;
+    private int EmployeeID;
+    private int age;
     private String Gender;
     private String StartDate;
     private String Level;
     private String TeamInfo;
     private String PositionTitle;
-    private String ContactInfo;
-    private String CellNumber;
+    private int CellNumber;
     private String EmailID;
+    private String Search;
+
+    public String getSearch() {
+        return Search;
+    }
+
+    public void setSearch(String Search) {
+        this.Search = Search;
+    }
+
+    public int getEmployeeID() {
+        return EmployeeID;
+    }
+
+    public void setEmployeeID(int EmployeeID) {
+        this.EmployeeID = EmployeeID;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    public int getCellNumber() {
+        return CellNumber;
+    }
+
+    public void setCellNumber(int CellNumber) {
+        this.CellNumber = CellNumber;
+    }
+
 
     public String getEmailID() {
         return EmailID;
@@ -39,22 +72,6 @@ public class CreateProfile {
 
     public void setName(String Name) {
         this.Name = Name;
-    }
-
-    public String getEmployeeID() {
-        return EmployeeID;
-    }
-
-    public void setEmployeeID(String EmployeeID) {
-        this.EmployeeID = EmployeeID;
-    }
-
-    public String getAge() {
-        return age;
-    }
-
-    public void setAge(String age) {
-        this.age = age;
     }
 
     public String getGender() {
@@ -97,21 +114,6 @@ public class CreateProfile {
         this.PositionTitle = PositionTitle;
     }
 
-    public String getContactInfo() {
-        return ContactInfo;
-    }
-
-    public void setContactInfo(String ContactInfo) {
-        this.ContactInfo = ContactInfo;
-    }
-
-    public String getCellNumber() {
-        return CellNumber;
-    }
-
-    public void setCellNumber(String CellNumber) {
-        this.CellNumber = CellNumber;
-    }
     
     public Image getPhoto() {
         return Photo;
@@ -121,6 +123,10 @@ public class CreateProfile {
         this.Photo = Photo;
     }
 
-    
-    
+    @Override
+    public String toString(){
+        return Name;
+    }
+
+     
 }
