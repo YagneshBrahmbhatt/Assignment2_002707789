@@ -6,6 +6,8 @@ package model;
 
 import java.awt.Image;
 
+
+
 /**
  *
  * @author Yagnesh
@@ -23,6 +25,24 @@ public class CreateProfile {
     private int CellNumber;
     private String EmailID;
     private String Search;
+    private Image Photo;
+    private String SendPath, img_path;
+
+    public String getSendPath() {
+        return SendPath;
+    }
+
+    public void setSendPath(String SendPath) {
+        this.SendPath = SendPath;
+    }
+
+    public String getImg_path() {
+        return img_path;
+    }
+
+    public void setImg_path(String img_path) {
+        this.img_path = img_path;
+    }
 
     public String getSearch() {
         return Search;
@@ -64,7 +84,6 @@ public class CreateProfile {
     public void setEmailID(String EmailID) {
         this.EmailID = EmailID;
     }
-    private Image Photo;
 
     public String getName() {
         return Name;

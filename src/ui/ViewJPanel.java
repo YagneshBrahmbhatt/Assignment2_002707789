@@ -4,6 +4,7 @@
  */
 package ui;
 
+import javax.swing.ImageIcon;
 import javax.swing.JOptionPane;
 import javax.swing.RowFilter;
 import javax.swing.table.DefaultTableModel;
@@ -78,7 +79,7 @@ public class ViewJPanel extends javax.swing.JPanel {
         lblEmailID = new javax.swing.JLabel();
         txtEmailID = new javax.swing.JTextField();
         lblPhoto = new javax.swing.JLabel();
-        jLabel1 = new javax.swing.JLabel();
+        lblViewPhoto = new javax.swing.JLabel();
         btnUpdate = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
         txtSearch = new javax.swing.JTextField();
@@ -226,7 +227,7 @@ public class ViewJPanel extends javax.swing.JPanel {
         lblPhoto.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         lblPhoto.setText("Photo");
 
-        jLabel1.setText("jLabel1");
+        lblViewPhoto.setPreferredSize(new java.awt.Dimension(120, 120));
 
         btnUpdate.setText("Update");
         btnUpdate.addActionListener(new java.awt.event.ActionListener() {
@@ -302,7 +303,7 @@ public class ViewJPanel extends javax.swing.JPanel {
                                     .addGroup(layout.createSequentialGroup()
                                         .addGap(18, 18, 18)
                                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 161, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(lblViewPhoto, javax.swing.GroupLayout.PREFERRED_SIZE, 161, javax.swing.GroupLayout.PREFERRED_SIZE)
                                             .addComponent(txtEmailID, javax.swing.GroupLayout.PREFERRED_SIZE, 194, javax.swing.GroupLayout.PREFERRED_SIZE)))
                                     .addGroup(layout.createSequentialGroup()
                                         .addGap(29, 29, 29)
@@ -355,7 +356,7 @@ public class ViewJPanel extends javax.swing.JPanel {
                             .addComponent(lblStartDate)
                             .addComponent(txtStartDate, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(lblViewPhoto, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(lblPhoto)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -419,9 +420,24 @@ public class ViewJPanel extends javax.swing.JPanel {
 
     private void btnDeleteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDeleteActionPerformed
         // TODO add your handling code here
-        
-    }//GEN-LAST:event_btnDeleteActionPerformed
+        int selectedRowIndex = tblView.getSelectedRow();
 
+        if (selectedRowIndex<0){
+            JOptionPane.showMessageDialog(this,"Please select a row to delete.");
+            return;
+        }
+        DefaultTableModel model = (DefaultTableModel) tblView.getModel();
+        CreateProfile selectedProfile = (CreateProfile) model.getValueAt(selectedRowIndex,0);
+
+        history.deleteProfile(selectedProfile);
+
+        JOptionPane.showMessageDialog(this,"Employee Profile deleted.");
+
+        populateTable();
+
+    }//GEN-LAST:event_btnDeleteActionPerformed
+       
+        
     private void btnViewActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnViewActionPerformed
         // TODO add your handling code here:
         
@@ -444,6 +460,10 @@ public class ViewJPanel extends javax.swing.JPanel {
         txtPositionTitle.setText(selectedProfile.getPositionTitle());
         txtCellNumber.setText(String.valueOf(selectedProfile.getCellNumber()));
         txtEmailID.setText(selectedProfile.getEmailID());
+        
+        String img_path = selectedProfile.getSendPath();
+            //JOptionPane.showMessageDialog(this, img_path);
+            lblViewPhoto.setIcon(new ImageIcon(img_path));
         
     }//GEN-LAST:event_btnViewActionPerformed
 
@@ -478,7 +498,7 @@ public class ViewJPanel extends javax.swing.JPanel {
             tblView.setValueAt(CellNumber, tblView.getSelectedRow(),3);
             //tblView.setValueAt(EmailID, tblView.getSelectedRow(),9);
             
-            JOptionPane.showMessageDialog(this,"Selected Profile Updated Succefully.");
+            JOptionPane.showMessageDialog(this,"Selected Profile Updated Successfully.");
         }else {
             if(tblView.getRowCount()==0){
                 JOptionPane.showMessageDialog(this,"Table is Empty.");
@@ -490,20 +510,6 @@ public class ViewJPanel extends javax.swing.JPanel {
 
     private void btnDeleteMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnDeleteMouseClicked
         // TODO add your handling code here:
-        int selectedRowIndex = tblView.getSelectedRow();
-
-        if (selectedRowIndex<0){
-            JOptionPane.showMessageDialog(this,"Please select a row to delete.");
-            return;
-        }
-        DefaultTableModel model = (DefaultTableModel) tblView.getModel();
-        CreateProfile selectedProfile = (CreateProfile) model.getValueAt(selectedRowIndex,0);
-
-        history.deleteProfile(selectedProfile);
-
-        JOptionPane.showMessageDialog(this,"Employee Profile deleted.");
-
-        populateTable();
 
     }//GEN-LAST:event_btnDeleteMouseClicked
 
@@ -526,7 +532,6 @@ public class ViewJPanel extends javax.swing.JPanel {
     private javax.swing.JButton btnDelete;
     private javax.swing.JButton btnUpdate;
     private javax.swing.JButton btnView;
-    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JLabel lblAge;
@@ -542,6 +547,7 @@ public class ViewJPanel extends javax.swing.JPanel {
     private javax.swing.JLabel lblStartDate;
     private javax.swing.JLabel lblTeamInfo;
     private javax.swing.JLabel lblTitle;
+    private javax.swing.JLabel lblViewPhoto;
     private javax.swing.JTable tblView;
     private javax.swing.JTextField txtAge;
     private javax.swing.JTextField txtCellNumber;
